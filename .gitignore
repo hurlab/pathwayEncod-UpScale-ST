@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local dataset paths / secrets — never commit real paths
+configs/paths.yaml
+configs/*.local.yaml
+
+# Training outputs
+outputs/
+*.pt
+*.pth
+*.ckpt
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/

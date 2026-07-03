@@ -1,0 +1,22 @@
+# Copy this file to paths.yaml (or any path of your choosing) and fill in the
+# locations of your own data. Nothing under configs/ except this example file
+# should be committed to version control.
+
+# Pretrained UNI ViT-L/16 weights (pytorch_model.bin)
+uni_weights: "/path/to/UNI/pytorch_model.bin"
+
+# Visium HD sample: whole-slide H&E image + the 2/8/16um binned expression matrices
+hd:
+  slide_dir: "/path/to/visium_hd_sample"
+  image: "/path/to/visium_hd_sample/tissue_image.btf"
+  h5_002um: "/path/to/visium_hd_sample/binned_outputs/square_002um/filtered_feature_bc_matrix.h5"
+  h5_008um: "/path/to/visium_hd_sample/binned_outputs/square_008um/filtered_feature_bc_matrix.h5"
+  h5_016um: "/path/to/visium_hd_sample/binned_outputs/square_016um/filtered_feature_bc_matrix.h5"
+
+# Visium V2 sample from the same (or matched) tissue block
+v2:
+  dir: "/path/to/visium_v2_sample"
+  image: "/path/to/visium_v2_sample/tissue_image.btf"
+  positions: "/path/to/visium_v2_sample/spatial/tissue_positions.csv"
+
+output_dir: "./outputs"
